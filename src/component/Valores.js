@@ -11,7 +11,7 @@ const Valores = ({id, porcentajeAumento, precioInicial, mes}) => {
 
     const generarValue = (mes) => {
         if (mes === "Enero" && porcentajeAumento) {
-          return precioInicial;
+           return precioInicial;
         } else if (porcentajeAumento) {
           const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
           const index = meses.findIndex(m => m === mes);
